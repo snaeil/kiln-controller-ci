@@ -1,0 +1,9 @@
+[Unit]
+Description=kiln-controller
+
+[Service]
+ExecStart=@REPO_DIR@/venv/bin/python @REPO_DIR@/kiln-controller.py
+WorkingDirectory=@REPO_DIR@
+
+[Install]
+WantedBy=multi-user.target
