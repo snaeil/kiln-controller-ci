@@ -48,7 +48,7 @@ jobs:
         if: always()
       - name: Run tests
         run: |
-          uv run pytest --cov=src --doctest-modules -v Test -q
+          uv run pytest --doctest-modules -v Test -q
         if: always()
       - name: Run audit
         run: |
